@@ -1,0 +1,111 @@
+{
+  "test_seasons": [
+    2023,
+    2024
+  ],
+  "n_games": 570,
+  "winner": {
+    "Our model (ensemble)": {
+      "n": 570,
+      "accuracy": 0.6473684210526316,
+      "log_loss": 0.6311590684436552,
+      "brier": 0.2203573587617896
+    },
+    "Elo only": {
+      "n": 570,
+      "accuracy": 0.6385964912280702,
+      "log_loss": 0.6347755240044163,
+      "brier": 0.2220136521667396
+    },
+    "Always pick home": {
+      "n": 570,
+      "accuracy": 0.5561403508771929,
+      "log_loss": 0.687038323592781,
+      "brier": 0.2469505804390294
+    },
+    "Vegas (moneyline, no-vig)": {
+      "n": 570,
+      "accuracy": 0.6912280701754386,
+      "log_loss": 0.6080921947970851,
+      "brier": 0.20980656120743818
+    }
+  },
+  "margin": {
+    "Our model (ensemble)": {
+      "mae": 10.194362042964837,
+      "rmse": 13.209071212712065
+    },
+    "Vegas closing spread": {
+      "mae": 9.843859649122807,
+      "rmse": 12.949226082679646
+    },
+    "Predict 0": {
+      "mae": 11.298245614035087,
+      "rmse": 14.646716894562879
+    }
+  },
+  "pick_agreement_with_vegas": 0.8508771929824561,
+  "when_disagree_with_vegas": {
+    "n": 85,
+    "ours_correct": 0.35294117647058826,
+    "vegas_correct": 0.6470588235294118
+  },
+  "by_season": [
+    {
+      "season": 2023,
+      "ours": 0.6246,
+      "vegas": 0.6772,
+      "games": 285
+    },
+    {
+      "season": 2024,
+      "ours": 0.6702,
+      "vegas": 0.7053,
+      "games": 285
+    }
+  ],
+  "confidence_buckets": [
+    {
+      "conf": "(0.5, 0.55]",
+      "games": 122,
+      "our_accuracy": 0.4836,
+      "avg_confidence": 0.524,
+      "vegas_accuracy": 0.6721
+    },
+    {
+      "conf": "(0.55, 0.6]",
+      "games": 123,
+      "our_accuracy": 0.6341,
+      "avg_confidence": 0.572,
+      "vegas_accuracy": 0.6585
+    },
+    {
+      "conf": "(0.6, 0.65]",
+      "games": 113,
+      "our_accuracy": 0.6726,
+      "avg_confidence": 0.6249,
+      "vegas_accuracy": 0.6726
+    },
+    {
+      "conf": "(0.65, 0.7]",
+      "games": 80,
+      "our_accuracy": 0.7125,
+      "avg_confidence": 0.6722,
+      "vegas_accuracy": 0.6875
+    },
+    {
+      "conf": "(0.7, 0.75]",
+      "games": 60,
+      "our_accuracy": 0.7333,
+      "avg_confidence": 0.7255,
+      "vegas_accuracy": 0.75
+    },
+    {
+      "conf": "(0.75, 1.0]",
+      "games": 72,
+      "our_accuracy": 0.7639,
+      "avg_confidence": 0.7978,
+      "vegas_accuracy": 0.7639
+    }
+  ]
+}

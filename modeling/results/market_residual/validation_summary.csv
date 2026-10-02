@@ -1,0 +1,8 @@
+model,n,accuracy,log_loss,brier,ats_hit_rate,ats_hit_when_|edge|>1.5,n_edge>1.5,resid_mae,resid_mae_baseline(0)
+vegas_spread,2164,0.6534,0.6147,0.2133,,,,,9.839
+resid_ridge_bias,2164,0.6553,0.6142,0.213,0.5052,0.3778,45.0,9.8548,9.839
+resid_hgb_bias,2164,0.6557,0.6155,0.2136,0.4877,0.4286,105.0,9.8712,9.839
+resid_ridge_bias+modelgap,2164,0.6562,0.6156,0.2135,0.5,0.4409,127.0,9.8713,9.839
+resid_ridge_modelgap_only,2164,0.6548,0.6147,0.2131,0.4967,,0.0,9.8555,9.839
+stack_logit,2164,0.6516,0.6155,0.2136,,,,,9.839
+v1,2164,0.647,0.6314,0.2206,,,,,9.839

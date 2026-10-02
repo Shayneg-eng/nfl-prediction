@@ -1,0 +1,40 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Secrets — never commit real keys
+.env
+.env.local
+*.key
+credentials.txt
+*cookies*.txt
+*API*.txt
+*api*key*.txt
+
+# Logs & caches
+*.log
+.cache/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large model artifacts (use Git LFS or release assets instead)
+*.pth
+*.pt
+*.h5
+*.keras
+*.model
+*.npy
+*.lgb
+*.pkl
+*.bin

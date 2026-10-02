@@ -1,0 +1,15 @@
+{
+  "frozen_on": "2026-09-22",
+  "selected_by": "walk-forward validation log loss, seasons 2015-2022 (2023-2024 never loaded)",
+  "winner_ensemble": [
+    "ridge_a3000",
+    "curated_ridge_a3000",
+    "curated_logit_C0.001",
+    "hgb_reg_lr0.03_d3_n300"
+  ],
+  "margin_ensemble": [
+    "ridge_a3000",
+    "curated_ridge_a3000",
+    "hgb_reg_lr0.03_d3_n300"
+  ]
+}
